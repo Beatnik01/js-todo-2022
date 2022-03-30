@@ -4,6 +4,7 @@ clock.innerText = "00:00";
 
 function getClock() {
   const date = new Date();
+  // padStart(2, "0") 문자열 길이가 2 미만이면 앞을 0으로 채워서 2 이상으로 만듬
   const hours = String(date.getHours()).padStart(2, "0");
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
